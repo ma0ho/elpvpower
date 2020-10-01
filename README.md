@@ -50,6 +50,7 @@ In case you use this code for your own scientific work, please cite the followin
 BibTeX:
 
 <details>
+
 ```bibtex
 @misc{hoffmann2020deep,
    title={Deep Learning-based Pipeline for Module Power Prediction from EL Measurements}, 
@@ -60,4 +61,6 @@ BibTeX:
    primaryClass={cs.CV}
 }
 ```
+
 </details>
+
