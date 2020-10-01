@@ -43,4 +43,21 @@ python inference.py --help
 
 ## References
 
-*TODO*
+In case you use this code for your own scientific work, please cite the following arXiv preprint of our paper:
+
+> Hoffmann, M., Buerhop-Lutz, C., Reeb, L., Pickel, T., Winkler, T., Doll, B., Wurfl, T., Peters, I.M., Brabec, C., Maier, A., & Christlein, V. (2020). Deep Learning-based Pipeline for Module Power Prediction from EL Measurements. ([arXiv](https://arxiv.org/abs/2009.14712))
+
+BibTeX:
+
+<details>
+```bibtex
+@misc{hoffmann2020deep,
+   title={Deep Learning-based Pipeline for Module Power Prediction from EL Measurements}, 
+   author={Mathis Hoffmann and Claudia Buerhop-Lutz and Luca Reeb and Tobias Pickel and Thilo Winkler and Bernd Doll and Tobias Würfl and Ian Marius Peters and Christoph Brabec and Andreas Maier and Vincent Christlein},
+   year={2020},
+   eprint={2009.14712},
+   archivePrefix={arXiv},
+   primaryClass={cs.CV}
+}
+```
+</details>
