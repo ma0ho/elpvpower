@@ -10,7 +10,7 @@ from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 from pytorch_lightning.loggers import TestTubeLogger
 from pytorch_lightning import Trainer
 import torch as t
-from skimage import io
+from skimage import io, transform
 
 from pvpower.model import PVModel
 from pvpower.data import PVPowerCustomDataset
@@ -53,7 +53,7 @@ def run_fn(params):
                 # pass through network and perform visualization
                 fmap_calibration = np.load(params.checkpoint_path.parent / 'fmap_calibration.npy')
                 y, fmap = model(x, return_features=True)
-                img = io.imread(p, as_gray=True)
+                img = transform.resize(io.imread(p, as_gray=True), (1500, 900))
                 calibrated_fmap = fmap.cpu().squeeze().numpy()-fmap_calibration  # subtract constant bias
                 visualize_fmap(img.T, calibrated_fmap, params.target_path, p.stem)
             else:
