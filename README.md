@@ -1,6 +1,6 @@
 # PVPower Implementation
 
-![Overview](misc/graphical-abstract.jpeg)
+![Overview](misc/graphical-abstract.jpg)
 
 This repository supplements the paper "Deep Learning-based Pipeline for Module Power Prediction from EL Measurements" ([arXiv](https://arxiv.org/abs/2009.14712)) and can be used in order to verify our experiments. You are free to use this in your own experiments. However, please make sure to cite us correctly.
 
